@@ -1,12 +1,12 @@
 # SignAssist CV
 
-A beginner computer vision project that recognizes simple static hand gestures using webcam input, hand landmarks, and a lightweight classifier.
+A beginner computer vision project that recognizes simple static hand gestures using webcam input, MediaPipe hand landmarks, and a lightweight machine learning classifier.
 
 ## Project goal
 
 Build a webcam-based demo that recognizes 5 simple static hand gestures.
 
-## Planned gestures
+Planned gestures:
 
 1. Open palm
 2. Closed fist
@@ -14,28 +14,17 @@ Build a webcam-based demo that recognizes 5 simple static hand gestures.
 4. Peace sign
 5. Thumbs up
 
-## Tech stack
+## Important note
 
-- Python
-- OpenCV
-- MediaPipe
-- NumPy
-- scikit-learn
+This is not a full sign-language translator.
 
-## What this project is not
+This is a beginner gesture recognition project connected to accessibility, human-computer interaction, and human-robot interaction learning.
 
-This is not a full sign-language translator. It is a beginner gesture recognition demo connected to accessibility and HRI learning.
+## Why this project matters
 
-## Planned pipeline
+This project helps me connect my accessibility/HCI/sign-language research background with real computer vision engineering skills.
 
-1. Capture webcam input
-2. Detect hand landmarks
-3. Collect gesture data
-4. Train a lightweight classifier
-5. Run real-time prediction
-6. Measure basic accuracy and FPS
-7. Document limitations
+The technical goal is to learn how to build a basic perception pipeline:
 
-## Status
-
-Week 1: Repo setup
+```text
+webcam → MediaPipe hand landmarks → landmark features → classifier → gesture label
